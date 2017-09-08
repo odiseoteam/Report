@@ -1,5 +1,5 @@
 {
-    "name": "sylius/report",
+    "name": "odiseoteam/report",
     "type": "library",
     "description": "Report system, based on data fetchers and renderers.",
     "keywords": ["shop", "ecommerce", "report", "data fetcher", "renderer"],

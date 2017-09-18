@@ -52,8 +52,6 @@
     "autoload-dev": {
         "psr-4": { "Sylius\\Component\\Report\\spec\\": "spec/" }
     },
-    "minimum-stability": "dev",
-    "prefer-stable": true,
     "repositories": [
         {
             "type": "path",

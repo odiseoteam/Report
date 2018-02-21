@@ -13,8 +13,10 @@ namespace Sylius\Component\Report\Model;
 
 use Sylius\Component\Resource\Model\CodeAwareInterface;
 use Sylius\Component\Resource\Model\ResourceInterface;
+use Sylius\Component\Resource\Model\TimestampableInterface;
+use Sylius\Component\Resource\Model\ToggleableInterface;
 
-interface ReportInterface extends CodeAwareInterface, ResourceInterface
+interface ReportInterface extends CodeAwareInterface, ResourceInterface, TimestampableInterface
 {
     /**
      * @return string

@@ -13,6 +13,8 @@ namespace Sylius\Component\Report\Model;
 
 use Sylius\Component\Report\DataFetcher\DefaultDataFetchers;
 use Sylius\Component\Report\Renderer\DefaultRenderers;
+use Sylius\Component\Resource\Model\TimestampableTrait;
+use Sylius\Component\Resource\Model\ToggleableTrait;
 
 /**
  * @author Łukasz Chruściel <lukasz.chrusciel@lakion.com>
@@ -20,6 +22,8 @@ use Sylius\Component\Report\Renderer\DefaultRenderers;
  */
 class Report implements ReportInterface
 {
+    use TimestampableTrait;
+
     /**
      * @var mixed
      */
@@ -63,6 +67,11 @@ class Report implements ReportInterface
      * @var array
      */
     protected $dataFetcherConfiguration = [];
+
+    public function __construct()
+    {
+        $this->createdAt = new \DateTime();
+    }
 
     /**
      * {@inheritdoc}
